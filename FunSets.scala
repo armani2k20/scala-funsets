@@ -30,7 +30,7 @@ object FunSets {
     * the sets of all elements that are in either `s` or `t`.
     */
   def union(s: Set, t: Set): Set = {
-    n => (contains(s, n) || contains(t, n))
+    n => contains(s, n) || contains(t, n)
   }
 
   /**
@@ -103,6 +103,5 @@ object FunSets {
   def printSet(s: Set) {
     println(toString(s))
   }
-}
 
 }
